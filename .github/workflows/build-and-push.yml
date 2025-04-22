@@ -17,8 +17,8 @@ jobs:
       uses: azure/docker-login@v1
       with:
         login-server: rebaracr.azurecr.io
-        username: ${{ secrets.ACR_USERNAME }}
-        password: ${{ secrets.ACR_PASSWORD }}
+        username: rebaracr
+        password: SxKmm5YVO+PIYiQWbmee8dMAn6gq/Ex5OfF7I0tVCz+ACRDv1B1W  # 🔥 temporary only!
 
     - name: Build and push container
       run: |
