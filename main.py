@@ -28,3 +28,8 @@ async def infer_image(file: UploadFile = File(...)):
 
     finally:
         os.remove(temp_path)
+
+# ✅ THIS BLOCK IS REQUIRED for Azure to start the API server
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=9000)
